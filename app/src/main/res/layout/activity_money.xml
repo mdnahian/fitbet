@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="$"
+            android:gravity="center|end"
+            android:textSize="64sp"
+            android:layout_weight="2"
+            android:textColor="@color/yellow"
+            android:textAllCaps="true"
+            android:textScaleX="1.1"
+            android:fontFamily="@font/oswaldextralight"/>
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center|start"
+            android:textSize="64sp"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:background="#00000000"
+            android:textColor="@color/yellow"
+            android:textColorHint="@color/yellow"
+            android:maxLength="4"
+            android:textAllCaps="true"
+            android:textScaleX="1.1"
+            android:fontFamily="@font/oswaldextralight"/>
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/addMoneyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fund Account"
+        android:background="@color/yellow"
+        android:textColor="@color/dark"
+        android:padding="24dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="true"
+        android:textScaleX="1.5"
+        android:fontFamily="@font/oswaldextralight"/>
+
+
+
+</RelativeLayout>

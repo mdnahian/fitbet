@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.sellyoursoul.fitness">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:name="android.hardware.location.gps" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fitbet"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/fitbet"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddMoneyActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:theme="@style/Theme" />
+        <activity android:name=".JoinPoolActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".CreatePoolActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ViewPoolActivity"/>
+        <activity android:name=".ProgressActivity"/>
+    </application>
+
+</manifest>

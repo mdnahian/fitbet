@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5"
+            android:layout_marginBottom="64dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$0.00"
+                    android:textSize="36sp"
+                    android:gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL BALANCE"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:text="name"
+                android:gravity="center"
+                android:background="#eeeeee"/>
+
+
+            <ListView
+                android:id="@+id/users"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.7"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/joinPoolBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Pool"
+        android:background="#242424"
+        android:textColor="#ffffff"
+        android:padding="24dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "311482641539",
+    "firebase_url": "https://fitnessapp-b0af2.firebaseio.com",
+    "project_id": "fitnessapp-b0af2",
+    "storage_bucket": "fitnessapp-b0af2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311482641539:android:450529690a35be14",
+        "android_client_info": {
+          "package_name": "org.sellyoursoul.fitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311482641539-1mun9q99ognv20tugfgamfvbsk1og0rl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS3lofykU7Nr3atjKxzFvj9efZKUBCbzE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

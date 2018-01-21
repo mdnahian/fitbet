@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:layout_marginTop="64dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/yellow"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:textScaleX="1.5"
+                    android:fontFamily="@font/oswaldlight"
+                    />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkish"
+                    android:textColor="@color/bpWhite"
+                    android:padding="16dp"
+                    android:hint="e.g. Blink Fitness 123rd Street"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/bpWhite"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Entry Fee"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/yellow"
+                    android:textAllCaps="true"
+                    android:textScaleX="1.5"
+                    android:fontFamily="@font/oswaldlight"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/entryFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkish"
+                    android:padding="16dp"
+                    android:hint="e.g. $100.00"
+                    android:textColor="@color/bpWhite"
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/bpWhite"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/yellow"
+                    android:textAllCaps="true"
+                    android:textScaleX="1.5"
+                    android:fontFamily="@font/oswaldlight"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkish"
+                    android:textColor="@color/bpWhite"
+                    android:padding="16dp"
+                    android:hint="e.g. Monday, Wednestday, Friday"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/bpWhite"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/yellow"
+                    android:textAllCaps="true"
+                    android:textScaleX="1.5"
+                    android:fontFamily="@font/oswaldlight"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton android:id="@+id/group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Private"
+                        android:textColor="@color/bpWhite"
+                        android:textAllCaps="true"
+                        android:textScaleX="1.5"
+                        android:fontFamily="@font/oswaldlight"
+                        android:paddingStart="8dp"
+                        android:textSize="12sp" />
+                    <RadioButton android:id="@+id/commercial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gym / Commercial"
+                        android:textSize="12sp"
+                        android:textColor="@color/bpWhite"
+                        android:textAllCaps="true"
+                        android:textScaleX="1.5"
+                        android:fontFamily="@font/oswaldlight"
+                        android:paddingStart="8dp"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Expiration Date"
+                            android:layout_marginTop="16dp"
+                            android:textColor="@color/yellow"
+                            android:textAllCaps="true"
+                            android:textScaleX="1.5"
+                            android:fontFamily="@font/oswaldlight"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="01/21/16"
+                            android:textColor="@color/bpWhite"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/datePickerBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Select Date"
+                        android:textColor="@color/bpWhite"
+                        android:background="@color/darkish"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:layout_weight="1"
+                        android:textAllCaps="true"
+                        android:textScaleX="1.2"
+                        android:fontFamily="@font/oswaldlight"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEW POOL"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@color/dark"
+        android:textColor="@color/bpWhite"
+        android:textSize="32sp"
+        android:padding="17dp"
+        android:textAllCaps="true"
+        android:textScaleX="2"
+        android:fontFamily="@font/oswaldextralight"/>
+
+
+
+
+    <TextView
+        android:id="@+id/createPoolBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Pool"
+        android:background="@color/yellow"
+        android:textColor="@color/dark"
+        android:padding="24dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="true"
+        android:textScaleX="1.5"
+        android:fontFamily="@font/oswaldextralight"/>
+
+
+
+
+</RelativeLayout>

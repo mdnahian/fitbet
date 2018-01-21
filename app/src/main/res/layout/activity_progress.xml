@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:weightSum="5">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GOAL"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textScaleX="2"
+                android:fontFamily="@font/oswaldextralight"
+                android:textColor="@color/bpWhite"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textScaleX="2"
+                android:textSize="24sp"
+                android:text="3"
+                android:fontFamily="@font/oswaldregular"
+                android:textColor="@color/yellow"
+                android:layout_marginTop="-5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textScaleX="2"
+                android:textSize="15sp"
+                android:text="Days/Week"
+                android:fontFamily="@font/oswaldlight"
+                android:textColor="@color/yellow"
+                android:layout_marginTop="-5dp"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+
+        <com.deepakbaliga.beautifulgraph.Plotter
+        android:id="@+id/plotter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

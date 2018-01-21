@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.sellyoursoul.fitness.MainActivity"
+    android:background="@color/dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/trainer">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bpWhite"
+                android:layout_gravity="center"
+                android:text="MD MALSI"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textScaleX="1.1"
+                android:fontFamily="@font/oswaldextralight"/>
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="42sp"
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:textScaleX="1.1"
+                android:fontFamily="@font/oswaldmedium"/>
+
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="BALANCE"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/holo_orange_dark"/>-->
+
+
+        </LinearLayout>
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="92dp">
+
+                <LinearLayout
+                    android:id="@+id/addMoneyBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/money" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fund Account"
+                        android:background="@color/dark"
+                        android:textColor="@color/yellow"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_weight="3"
+                        android:textAllCaps="true"
+                        android:textScaleX="1.5"
+                        android:fontFamily="@font/oswaldextralight"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/progressBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="36dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/graph"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="My Progress"
+                        android:background="@color/dark"
+                        android:textColor="@color/yellow"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_weight="3"
+                        android:textAllCaps="true"
+                        android:textScaleX="1.5"
+                        android:fontFamily="@font/oswaldextralight"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/joinPoolBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="36dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/pool"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Join a Pool"
+                        android:background="@color/dark"
+                        android:textColor="@color/yellow"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_weight="3"
+                        android:textAllCaps="true"
+                        android:textScaleX="1.5"
+                        android:fontFamily="@font/oswaldextralight"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/createPoolBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="36dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/plus"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Start Your Own Pool"
+                        android:background="@color/dark"
+                        android:textColor="@color/yellow"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_weight="3"
+                        android:textAllCaps="true"
+                        android:textScaleX="1.5"
+                        android:fontFamily="@font/oswaldextralight"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/chickenOutBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="36dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/chicken"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="I'm a Quitter"
+                        android:background="@color/dark"
+                        android:textColor="@color/yellow"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_weight="3"
+                        android:textAllCaps="true"
+                        android:textScaleX="1.5"
+                        android:fontFamily="@font/oswaldextralight"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/settingsBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="36dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/settings"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Settings"
+                        android:background="@color/dark"
+                        android:textColor="@color/yellow"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_weight="3"
+                        android:textAllCaps="true"
+                        android:textScaleX="1.5"
+                        android:fontFamily="@font/oswaldextralight"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/termsBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="36dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/terms"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Terms and Conditions"
+                        android:background="@color/dark"
+                        android:textColor="@color/yellow"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_weight="3"
+                        android:textAllCaps="true"
+                        android:textScaleX="1.5"
+                        android:fontFamily="@font/oswaldextralight"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/checkinBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check-In"
+        android:background="@color/yellow"
+        android:textColor="@color/dark"
+        android:padding="24dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="true"
+        android:textScaleX="1.5"
+        android:fontFamily="@font/oswaldextralight"/>
+
+
+</RelativeLayout>
